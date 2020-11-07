@@ -7,24 +7,22 @@
     />
     <div class="relative py-16 bg-white overflow-hidden px-2 sm:px-8 lg:px-32">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div>
-          <h3
-            class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-10"
-          >
-            {{ page.mainpitch.title }}
-          </h3>
-          <p class="mt-4 text-lg leading-7 text-gray-500">
-            {{ page.mainpitch.description }}
-          </p>
-          <h3
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-          >
-            {{ page.title }}
-          </h3>
-          <p class="mt-4 text-lg leading-7 text-gray-500">
-            {{ page.description }}
-          </p>
-        </div>
+        <h3
+          class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-10"
+        >
+          {{ page.mainpitch.title }}
+        </h3>
+        <p class="mt-4 text-lg leading-7 text-gray-500">
+          {{ page.mainpitch.description }}
+        </p>
+        <h3
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        >
+          {{ page.title }}
+        </h3>
+        <p class="mt-4 text-lg leading-7 text-gray-500">
+          {{ page.description }}
+        </p>
 
         <div class="py-12 bg-white">
           <div class="max-w-xl mx-auto lg:max-w-screen-xl">

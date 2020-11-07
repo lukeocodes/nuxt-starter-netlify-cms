@@ -10,6 +10,7 @@
         {{ heading }}
       </h2>
       <h3
+        v-if="subheading"
         class="my-10 py-5 bg-orange-600 text-2xl tracking-tight leading-10 font-extrabold text-white sm:text-3xl sm:leading-none md:text-4xl"
       >
         {{ subheading }}

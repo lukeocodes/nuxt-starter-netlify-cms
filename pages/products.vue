@@ -1,40 +1,43 @@
 <template>
   <div>
-    <Hero />
+    <Hero
+      :heading="page.title"
+      :image="require(`~/static/img/home-jumbotron.jpg`)"
+    />
     <div class="py-12 bg-white">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-          <p
-            class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
-          >
-            Transactions
-          </p>
-          <h3
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-          >
-            A better way to send money
-          </h3>
-          <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
-          </p>
-        </div>
+        <h3
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        >
+          {{ page.title }}
+        </h3>
+        <p class="mt-4 text-lg leading-7 text-gray-500">
+          {{ page.description }}
+        </p>
 
-        <div class="mt-10">
-          <ul class="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            <li v-for="(blurb, i) in page.intro.blurbs" :key="i">
-              <div class="flex">
-                <div class="flex-shrink-0">
-                  <img :src="blurb.image" />
+        <div class="py-12 bg-white">
+          <div class="max-w-xl mx-auto lg:max-w-screen-xl">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+              <div v-for="(blurb, index) in page.intro.blurbs" :key="index">
+                <div class="flex items-center justify-center">
+                  <img class="h-32" :src="blurb.image" />
                 </div>
-                <div class="ml-4">
-                  <p class="mt-2 text-base leading-6 text-gray-500">
-                    {{ blurb.text }}.
-                  </p>
+                <div class="mt-5">
+                  <p class="mt-2 text-base leading-6">{{ blurb.text }}.</p>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+            <div class="text-center mt-16">
+              <span class="inline-flex rounded-md shadow-sm">
+                <nuxt-link
+                  to="/products"
+                  class="inline-flex items-center px-6 py-3 border border-gray-300 text-base leading-6 font-medium rounded-md text-orange-600 bg-white hover:text-orange-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
+                >
+                  See all products
+                </nuxt-link>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
