@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-20 mx-auto max-w-screen-xl px-4 sm:px-6"
+    class="py-20 mx-auto w-full px-4 sm:px-6"
     :style="`background: url(${image})`"
   >
     <div class="text-center">
