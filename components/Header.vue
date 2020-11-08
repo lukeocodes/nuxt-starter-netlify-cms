@@ -65,12 +65,6 @@
             >
               Contact
             </nuxt-link>
-            <nuxt-link
-              to="/contact/examples"
-              class="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
-            >
-              Form Examples
-            </nuxt-link>
           </nav>
           <div class="flex items-center space-x-8">
             <a
@@ -152,13 +146,6 @@
                   @click.native="toggleMenu"
                 >
                   Contact
-                </nuxt-link>
-                <nuxt-link
-                  to="/contact/examples"
-                  class="text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out hover:text-gray-700"
-                  @click.native="toggleMenu"
-                >
-                  Form Examples
                 </nuxt-link>
               </div>
               <div class="space-y-6">

@@ -31,14 +31,6 @@
                   </nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link
-                    to="/contact/examples"
-                    class="text-base leading-6 text-gray-300 hover:text-white"
-                  >
-                    Form Examples
-                  </nuxt-link>
-                </li>
-                <li>
                   <a
                     href="/admin"
                     target="_blank"
