@@ -78,6 +78,7 @@
         <div class="flex space-x-6 md:order-2">
           <a
             href="https://twitter.com/lukeocodes"
+            target="_blank"
             class="text-gray-400 hover:text-gray-300"
           >
             <span class="sr-only">Twitter</span>
@@ -89,6 +90,7 @@
           </a>
           <a
             href="https://github.com/lukeocodes/nuxt-starter-netlify-cms"
+            target="_blank"
             class="text-gray-400 hover:text-gray-300"
           >
             <span class="sr-only">GitHub</span>
