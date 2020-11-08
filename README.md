@@ -1,16 +1,16 @@
-<h1>Nuxt.js + Netlify CMS Starter Blog</h1>
+<h1>Nuxt Content + Netlify CMS Starter Blog</h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
 
-**Note:** This starter uses [Nuxt 2.14](https://nuxtjs.org/blog/nuxt-static-improvements/).
+**Note:** This starter uses [Nuxt 2.14](https://nuxtjs.org/blog/nuxt-static-improvements/) and [@nuxt/content v1.1.0](https://content.nuxtjs.org/).
 
-This repo contains an example business website that is built with [Nuxt.js](https://nuxtjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://nuxt-starter-netlify-cms.netlify.app/)**.
+This repo contains an example business website that is built with [Nuxt.js](https://nuxtjs.org/), [@nuxt/content](https://content.nuxtjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://nuxt-starter-netlify-cms.netlify.app/)**.
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
 ## Features
 
-- A simple landing page with blog functionality built with Netlify CMS
+- A simple landing page with blog functionality built with Netlify CMS and [@nuxt/content](https://content.nuxtjs.org/)
 - Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
 - Create Blog posts from Netlify CMS
 - Tags: Separate page for posts under each tag
