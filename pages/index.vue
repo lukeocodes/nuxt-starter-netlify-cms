@@ -6,7 +6,7 @@
       :image="require(`~/static/img/home-jumbotron.jpg`)"
     />
     <div
-      class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 lg:prose-xl"
+      class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-2xl lg:prose-xl md:prose-lg"
     >
       <h3>
         {{ page.mainpitch.title }}
