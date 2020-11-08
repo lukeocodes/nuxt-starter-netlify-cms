@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/lukeocodes/nuxt-starter-netlify-cms/compare/0.1.0...0.1.1) (2020-11-08)
+
+
+### Bug Fixes
+
+* dependabot nuxtjs/eslint-module broke builds ([de52e90](https://github.com/lukeocodes/nuxt-starter-netlify-cms/commit/de52e905831fa5661b3ea1c9ac8d3c10527066e2))
+
 # [0.1.0](https://github.com/lukeocodes/nuxt-starter-netlify-cms/compare/0.0.1...0.1.0) (2020-11-08)
 
 

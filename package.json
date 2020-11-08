@@ -1,6 +1,6 @@
 {
   "name": "nuxt-starter-netlify-cms",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
