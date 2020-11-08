@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center h-hero">
-    <img :src="image" class="object-cover" />
+    <img :src="image" class="object-cover w-screen" />
     <div class="absolute">
       <div class="flex flex-col justify-center space-y-4 h-hero">
         <h2

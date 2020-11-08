@@ -22,6 +22,11 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Netlify function support, see `lambda` folder
 - ..and more
 
+## Sites Based On This
+
+- [Vonage Learn](https://vonage-deved-platform.netlify.app) - Developer Education Platform for Vonage.com
+- [Hacktoberfest Ninja](https://hacktoberfest.ninja) - Unofficial Hacktoberfest Site for Repo Tracking and Rules
+
 ## Prerequisites
 
 - Node (I recommend using v8.2.0 or higher)
@@ -87,7 +92,7 @@ npm install --global --production windows-build-tools
 
 MacOS users might also encounter some errors, for more info check [node-gyp](https://github.com/nodejs/node-gyp). We recommend using the latest stable node version.
 
-# CONTRIBUTING
+# Contributing
 
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).

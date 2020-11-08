@@ -74,7 +74,7 @@
         <div class="flex items-center space-x-8">
           <a
             href="https://github.com/lukeocodes/nuxt-starter-netlify-cms"
-            class="flex text-base font-medium leading-6 text-orange-500 transition duration-150 ease-in-out justify-right hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            class="flex text-base font-medium leading-6 transition duration-150 ease-in-out text-kaldi hover:underline justify-right hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             Find us on GitHub
             <img
@@ -162,7 +162,7 @@
               >
                 <a
                   href="https://github.com/lukeocodes/nuxt-starter-netlify-cms"
-                  class="flex justify-center text-orange-600 transition duration-150 ease-in-out hover:text-orange-500"
+                  class="flex justify-center transition duration-150 ease-in-out text-kaldi hover:underline"
                 >
                   Find us on GitHub
                   <img
