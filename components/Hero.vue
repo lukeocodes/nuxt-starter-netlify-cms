@@ -4,6 +4,7 @@
     <div class="absolute">
       <div class="flex flex-col justify-center space-y-4 h-hero">
         <h2
+          v-if="heading"
           class="px-4 text-2xl font-extrabold text-white bg-kaldi sm:text-3xl md:text-4xl"
         >
           {{ heading }}
@@ -24,11 +25,11 @@ export default {
   props: {
     heading: {
       type: String,
-      required: true,
+      default: null,
     },
     subheading: {
       type: String,
-      required: true,
+      default: null,
     },
     image: {
       type: String,
