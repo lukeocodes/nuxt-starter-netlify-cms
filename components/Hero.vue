@@ -1,20 +1,20 @@
 <template>
-  <div
-    class="py-20 mx-auto w-full px-4 sm:px-6"
-    :style="`background: url(${image})`"
-  >
-    <div class="text-center">
-      <h2
-        class="my-10 py-5 bg-orange-600 text-3xl tracking-tight leading-10 font-extrabold text-white sm:text-4xl sm:leading-none md:text-5xl"
-      >
-        {{ heading }}
-      </h2>
-      <h3
-        v-if="subheading"
-        class="my-10 py-5 bg-orange-600 text-2xl tracking-tight leading-10 font-extrabold text-white sm:text-3xl sm:leading-none md:text-4xl"
-      >
-        {{ subheading }}
-      </h3>
+  <div class="flex justify-center h-hero">
+    <img :src="image" class="object-cover" />
+    <div class="absolute">
+      <div class="flex flex-col justify-center space-y-4 h-hero">
+        <h2
+          class="px-4 text-2xl font-extrabold text-white bg-kaldi sm:text-3xl md:text-4xl"
+        >
+          {{ heading }}
+        </h2>
+        <h3
+          v-if="subheading"
+          class="px-4 text-lg text-white bg-kaldi sm:text-xl md:text-2xl"
+        >
+          {{ subheading }}
+        </h3>
+      </div>
     </div>
   </div>
 </template>
@@ -38,4 +38,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.h-hero {
+  height: 25rem;
+}
+</style>

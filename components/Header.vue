@@ -6,22 +6,22 @@
   <!-- This example requires Tailwind CSS v1.4.0+ -->
   <div class="relative bg-white">
     <div
-      class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10"
+      class="flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10"
     >
       <div>
         <nuxt-link to="/" class="flex">
           <img class="h-5" src="/img/logo.svg" alt="Workflow" />
         </nuxt-link>
       </div>
-      <div class="-mr-2 -my-2 md:hidden">
+      <div class="-my-2 -mr-2 md:hidden">
         <button
           type="button"
-          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+          class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
           @click="toggleMenu"
         >
           <!-- Heroicon name: menu -->
           <svg
-            class="h-6 w-6"
+            class="w-6 h-6"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -42,31 +42,31 @@
         <nav class="flex space-x-10">
           <nuxt-link
             to="/about"
-            class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            class="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             About
           </nuxt-link>
           <nuxt-link
             to="/products"
-            class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            class="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             Products
           </nuxt-link>
           <nuxt-link
             to="/blog"
-            class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            class="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             Blog
           </nuxt-link>
           <nuxt-link
             to="/contact"
-            class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            class="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             Contact
           </nuxt-link>
           <nuxt-link
             to="/contact/examples"
-            class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            class="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             Form Examples
           </nuxt-link>
@@ -74,7 +74,7 @@
         <div class="flex items-center space-x-8">
           <a
             href="https://github.com/lukeocodes/nuxt-starter-netlify-cms"
-            class="flex justify-right text-base leading-6 font-medium text-orange-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            class="flex text-base font-medium leading-6 text-orange-500 transition duration-150 ease-in-out justify-right hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             Find us on GitHub
             <img
@@ -88,12 +88,12 @@
     </div>
 
     <div
-      class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+      class="absolute inset-x-0 top-0 z-50 p-2 transition origin-top-right transform md:hidden"
       :class="{ hidden: !menuOpen }"
     >
       <div class="rounded-lg shadow-lg">
-        <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
-          <div class="pt-5 pb-6 px-5 space-y-6">
+        <div class="bg-white divide-y-2 rounded-lg shadow-xs divide-gray-50">
+          <div class="px-5 pt-5 pb-6 space-y-6">
             <div class="flex items-center justify-between">
               <div>
                 <img class="h-5" src="/img/logo.svg" alt="Workflow" />
@@ -101,12 +101,12 @@
               <div class="-mr-2">
                 <button
                   type="button"
-                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                  class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
                   @click="toggleMenu"
                 >
                   <!-- Heroicon name: x -->
                   <svg
-                    class="h-6 w-6"
+                    class="w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -123,46 +123,46 @@
               </div>
             </div>
           </div>
-          <div class="py-6 px-5 space-y-6">
+          <div class="px-5 py-6 space-y-6">
             <div class="grid grid-cols-2 gap-4">
               <nuxt-link
                 to="/about"
-                class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                class="text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out hover:text-gray-700"
               >
                 About
               </nuxt-link>
               <nuxt-link
                 to="/products"
-                class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                class="text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out hover:text-gray-700"
               >
                 Products
               </nuxt-link>
               <nuxt-link
                 to="/blog"
-                class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                class="text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out hover:text-gray-700"
               >
                 Blog
               </nuxt-link>
               <nuxt-link
                 to="/contact"
-                class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                class="text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out hover:text-gray-700"
               >
                 Contact
               </nuxt-link>
               <nuxt-link
                 to="/contact/examples"
-                class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                class="text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out hover:text-gray-700"
               >
                 Form Examples
               </nuxt-link>
             </div>
             <div class="space-y-6">
               <p
-                class="text-center text-base leading-6 font-medium text-gray-500"
+                class="text-base font-medium leading-6 text-center text-gray-500"
               >
                 <a
                   href="https://github.com/lukeocodes/nuxt-starter-netlify-cms"
-                  class="flex justify-center text-orange-600 hover:text-orange-500 transition ease-in-out duration-150"
+                  class="flex justify-center text-orange-600 transition duration-150 ease-in-out hover:text-orange-500"
                 >
                   Find us on GitHub
                   <img
