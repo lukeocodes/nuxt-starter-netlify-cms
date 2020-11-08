@@ -1,11 +1,9 @@
 <template>
-  <div class="mx-auto prose lg:prose-xl">
-    <h1
-      class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-    >
-      {{ page.title }}
-    </h1>
-    <nuxt-content :document="page" class="mx-auto prose lg:prose-xl" />
+  <div
+    class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-2xl lg:prose-xl md:prose-lg"
+  >
+    <h1>{{ page.title }}</h1>
+    <nuxt-content :document="page" />
   </div>
 </template>
 
