@@ -1,3 +1,5 @@
+## [0.2.1](https://github.com/lukeocodes/nuxt-starter-netlify-cms/compare/0.2.0...0.2.1) (2020-11-09)
+
 # [0.2.0](https://github.com/lukeocodes/nuxt-starter-netlify-cms/compare/0.1.1...0.2.0) (2020-11-09)
 
 
