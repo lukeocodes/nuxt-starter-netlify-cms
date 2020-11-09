@@ -1,14 +1,17 @@
 {
   "name": "nuxt-starter-netlify-cms",
   "version": "0.2.1",
+  "description": "Example Nuxt, and Netlify CMS project",
+  "author": "Luke Oliff <luke@lukeoliff.com> (https://twitter.com/lukeocodes)",
+  "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "npm run lint:js",
-    "release": "release-it"
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "release": "release-it",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@nuxt/content": "^1.9.0",
@@ -30,5 +33,11 @@
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.1.2",
     "release-it": "^14.2.1"
-  }
+  },
+  "keywords": [
+    "nuxt",
+    "vue",
+    "netlify-cms"
+  ],
+  "license": "MIT"
 }
