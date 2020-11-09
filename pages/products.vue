@@ -26,7 +26,7 @@
       <p>
         {{ page.main.description }}
       </p>
-      <div class="-mt-12 -mb-20 lg:grid lg:grid-cols-2 lg:gap-4">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-4">
         <img
           class="rounded-lg"
           :src="page.main.image1.image"
@@ -38,14 +38,14 @@
           :alt="page.main.image2.alt"
         />
       </div>
-      <div class="-mb-10 lg:grid lg:grid-cols-1 lg:gap-4">
+      <div class="lg:grid lg:grid-cols-1 lg:gap-4">
         <img
           class="rounded-lg"
           :src="page.main.image3.image"
           :alt="page.main.image3.alt"
         />
       </div>
-      <div class="mb-12 -mt-12">
+      <div>
         <p
           v-for="(testimonial, index) in page.testimonials"
           :key="index"
