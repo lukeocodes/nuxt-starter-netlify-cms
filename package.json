@@ -11,6 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "release": "release-it",
+    "commit": "cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "@nuxtjs/tailwindcss": "^3.1.0",
     "@release-it/conventional-changelog": "^2.0.0",
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.2",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-nuxt": "^1.0.0",
