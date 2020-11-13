@@ -2,6 +2,15 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  // Environment variables: https://nuxtjs.org/api/configuration-env/
+  env: {
+    url:
+      process.env.NODE_ENV === 'production'
+        ? process.env.URL || 'http://createADotEnvFileAndSetURL'
+        : 'http://localhost:3000',
+    lang: 'en-US',
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'Nuxt + Netlify CMS Starter',
@@ -15,8 +24,12 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
+  generate: {
+    fallback: true,
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -34,10 +47,6 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // https://go.nuxtjs.dev/axios
-    // '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    // '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],

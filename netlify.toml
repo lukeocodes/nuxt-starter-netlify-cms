@@ -1,15 +1,3 @@
 [build]
-  publish = "dist"
-  command = "npm run generate"
-  functions = "lambda"
-
-[[redirects]]
-  from = "/admin"
-  to = "/admin/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+command = "npm run generate"
+publish = "dist/"
