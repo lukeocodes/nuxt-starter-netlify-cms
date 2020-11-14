@@ -19,7 +19,6 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Blazing fast loading times thanks to server-side rendering in [full static mode](https://nuxtjs.org/blog/going-full-static/).
 - Separate components for everything
 - Netlify deploy configuration
-- Netlify function support, see `lambda` folder
 - ..and more
 
 ## Sites Based On This
