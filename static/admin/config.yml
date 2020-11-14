@@ -40,7 +40,7 @@ collections:
     # identifier_field: name
     folder: 'content/blog'
     create: true
-    format: 'json'
+    format: 'markdown'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     # editor:
     #   preview: true
