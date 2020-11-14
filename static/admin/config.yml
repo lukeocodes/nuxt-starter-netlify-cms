@@ -1,10 +1,17 @@
-site_url: https://nuxt-starter-netlify-cms.netlify.app/
+display_url: https://nuxt-starter-netlify-cms.netlify.app
+site_url: https://nuxt-starter-netlify-cms.netlify.app
 logo_url: https://nuxt-starter-netlify-cms.netlify.app/icon.png
 
 publish_mode: editorial_workflow
 backend:
   name: git-gateway
   branch: main
+  commit_messages:
+    create: 'chore({{collection}}): create “{{slug}}”'
+    update: 'chore({{collection}}): update “{{slug}}”'
+    delete: 'chore({{collection}}): delete “{{slug}}”'
+    uploadMedia: 'chore(media): [skip ci] upload “{{path}}”'
+    deleteMedia: 'chore(media): [skip ci] delete “{{path}}”'
 
 media_folder: static/img
 public_folder: /img
@@ -13,13 +20,11 @@ public_folder: /img
 collections:
   - name: 'blog'
     label: 'Blog'
-    # identifier_field: name
     folder: 'content/blog'
     create: true
     format: frontmatter
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    # editor:
-    #   preview: true
+    preview_path: '{{dirname}}/{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -48,4 +53,3 @@ collections:
               widget: string,
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
-          # - { label: Site Email, name: siteemail, widget: string, required: false }
