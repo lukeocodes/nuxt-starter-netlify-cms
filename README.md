@@ -45,34 +45,34 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 
 Pulldown a local copy of the Github repository Netlify created for you, with the name you specified in the previous step
 
-```shell
-$ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
-$ cd [REPO_NAME]
-$ npm install
-$ netlify dev # or ntl dev
+```sh
+git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
+cd [REPO_NAME]
+npm install
+netlify dev # or ntl dev
 ```
 
 This uses the new [Netlify Dev](https://www.netlify.com/products/dev/?utm_source=blog&utm_medium=netlifycms&utm_campaign=devex) CLI feature to serve any functions you have in the `lambda` folder.
 
 To test the CMS locally, you'll need to run a production build of the site:
 
-```shell
-$ netlify dev # or ntl dev
+```sh
+netlify dev # or ntl dev
 ```
 
 ## Getting Started (Without Netlify)
 
-```shell
-$ git clone https://github.com/lukeocodes/gatsby-starter-netlify-cms/ [SITE_DIRECTORY_NAME]
-$ cd [SITE_DIRECTORY_NAME]
-$ npm install
+```sh
+git clone https://github.com/lukeocodes/gatsby-starter-netlify-cms/ [SITE_DIRECTORY_NAME]
+cd [SITE_DIRECTORY_NAME]
+npm install
 
 # dev start
-$ npm run dev
+npm run dev
 
 # prod build and start
-$ npm run generate
-$ npm run start
+npm run generate
+npm run start
 ```
 
 ### Setting up the CMS
@@ -84,9 +84,9 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 Windows users might encounter `node-gyp` errors when trying to npm install.
 To resolve, make sure that you have both Python 2.7 and the Visual C++ build environment installed.
 
-```shell
-$ npm config set python python2.7
-$ npm install --global --production windows-build-tools
+```sh
+npm config set python python2.7
+npm install --global --production windows-build-tools
 ```
 
 [Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')

@@ -14,8 +14,8 @@ bootstrap and run the development server using `yarn develop`.
 Since this starter using the [netlify-dev](https://www.netlify.com/products/dev/#how-it-works), there could be further issues you, please check the [netlify-dev](https://github.com/netlify/netlify-dev) repository for further information and set up questions. 
 
 ```sh
-$ git clone https://github.com/netlify-templates/gatsby-starter-netlify-cms
-$ yarn 
+git clone https://github.com/netlify-templates/gatsby-starter-netlify-cms
+yarn 
 ```
 
 ## Available scripts
@@ -25,17 +25,17 @@ $ yarn
 
 Build the static files into the `public` folder, turns lambda functions into a deployable form. 
 
-#### Usage
+#### `build` Usage
 
 ```sh
-$ yarn build
+yarn build
 ```
 
 ### `clean`
 
 Runs `gatsby clean` command.
 
-#### Usage
+#### `clean` Usage
 
 ```sh
 yarn clean
@@ -54,7 +54,7 @@ netlify dev
 
 Runs the `clean` script and starts the gatsby develop server using the command `gatsby develop`. We recomend using this command when you don't need Netlify specific features
 
-#### Usage
+#### `develop` Usage
 
 ```sh
 yarn develop
@@ -63,7 +63,7 @@ yarn develop
 
 Not implmented yet
 
-#### Usage
+#### `test` Usage
 
 ```sh
 yarn test
@@ -73,7 +73,7 @@ yarn test
 
 Formats code and docs according to our style guidelines using `prettier`
 
-#### Usage
+#### `format` Usage
 
 ```sh
 yarn format
