@@ -96,4 +96,4 @@ MacOS users might also encounter some errors, for more info check [node-gyp](htt
 ## Contributing
 
 Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+please read the [code of conduct](./github/CODE_OF_CONDUCT.md). Then, check out the [contributing guidelines](./.github/CONTRIBUTING.md).
