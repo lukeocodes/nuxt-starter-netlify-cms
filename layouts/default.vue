@@ -1,11 +1,13 @@
 <template>
-  <div class="container">
+  <div>
     <Header />
-    <ColorModePicker />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
 export default {}
 </script>
+
+<style scoped></style>
