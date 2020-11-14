@@ -1,19 +1,19 @@
 {
-  "name": "ntn-boilerplate",
-  "version": "1.0.0",
-  "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
-  "author": "Sven Parker <sven@svenparker.com> (https://svenparker.com)",
+  "name": "nuxt-starter-netlify-cms",
+  "version": "0.2.1",
+  "description": "Example Nuxt, and Netlify CMS project",
+  "author": "Luke Oliff <luke@lukeoliff.com> (https://twitter.com/lukeocodes)",
+  "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "release": "release-it",
+    "commit": "cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/knogobert/ntn-boilerplate#readme"
-  },
-  "license": "MIT",
   "dependencies": {
     "@nuxt/content": "^1.9.0",
     "@tailwindcss/typography": "^0.2.0",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^4.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/tailwindcss": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^3.1.0",
     "@release-it/conventional-changelog": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.2",
@@ -33,5 +33,11 @@
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.1.2",
     "release-it": "^14.2.1"
-  }
+  },
+  "keywords": [
+    "nuxt",
+    "vue",
+    "netlify-cms"
+  ],
+  "license": "MIT"
 }
