@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/lukeocodes/nuxt-starter-netlify-cms/compare/1.0.0...1.0.1) (2020-11-14)
+
+
+### Bug Fixes
+
+* **styling:** tailwind background colour and border on page elements ([03a76c6](https://github.com/lukeocodes/nuxt-starter-netlify-cms/commit/03a76c626500a836240e09c8d50f7c4389fa2e19))
+
 # [1.0.0](https://github.com/lukeocodes/nuxt-starter-netlify-cms/compare/0.2.1...1.0.0) (2020-11-14)
 
 
