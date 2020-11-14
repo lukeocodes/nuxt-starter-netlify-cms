@@ -6,7 +6,7 @@
 
 This repo contains an example business website that is built with [Nuxt.js](https://nuxtjs.org/), [@nuxt/content](https://content.nuxtjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://nuxt-starter-netlify-cms.netlify.app/)**.
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
+It follows the [Jamstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
 ## Features
 
