@@ -1,30 +1,28 @@
 <template>
-  <article
-    v-if="blogPost"
-    class="main article"
+  <div
+    class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md"
   >
-    <h1 class="article-title">{{ blogPost.title }}</h1>
-    <h6
-      v-if="blogPost.date"
-      class="inline-block py-1 px-2 my-2 bg-accent text-white font-medium rounded-sm dark:bg-accent whitespace-no-wrap"
-    >{{ formatDate(blogPost.date) }}</h6>
-    <div v-html="$md.render(blogPost.body)" />
-  </article>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.description }}</p>
+    <nuxt-content :document="post" />
+    <h3>Tags</h3>
+    <ul>
+      <li v-for="(tag, index) in post.tags" :key="index">
+        <nuxt-link :to="`/tags/${tag}`">
+          {{ tag }}
+        </nuxt-link>
+      </li>
+    </ul>
+  </div>
 </template>
+
 <script>
 export default {
-  async asyncData({ params, payload }) {
-    if (payload) return { blogPost: payload }
-    else
-      return {
-        blogPost: await require(`~/assets/content/blog/${params.blog}.json`)
-      }
-  },
-  methods: {
-    formatDate(dateString) {
-      const date = new Date(dateString)
-      return date.toLocaleDateString(process.env.lang) || ''
+  async asyncData({ $content, params: { slug } }) {
+    const post = await $content('blog', slug).fetch()
+    return {
+      post,
     }
-  }
+  },
 }
 </script>
