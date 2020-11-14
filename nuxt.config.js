@@ -1,18 +1,21 @@
-import * as SITE_INFO from './content/site/info.json'
+import * as siteConfig from './content/site/info.json'
 
 export default {
+  // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  // Environment variables: https://nuxtjs.org/api/configuration-env/
   env: {
     url:
       process.env.NODE_ENV === 'production'
         ? process.env.URL || 'http://createADotEnvFileAndSetURL'
         : 'http://localhost:3000',
-    lang: SITE_INFO.sitelang || 'en-US',
+    lang: 'en-US',
   },
 
+  // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: SITE_INFO.sitename || process.env.npm_package_name || '',
+    title: siteConfig.sitename || process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,7 +23,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          SITE_INFO.sitedescription ||
+          siteConfig.sitedescription ||
           process.env.npm_package_description ||
           '',
       },
@@ -53,13 +56,4 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
-
-  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
-
-  // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
-
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
 }
