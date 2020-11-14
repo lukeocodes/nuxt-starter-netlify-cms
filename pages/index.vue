@@ -24,7 +24,7 @@
         <div
           v-for="(blurb, index) in page.intro.blurbs"
           :key="index"
-          class="flex flex-col items-center justify-top"
+          class="flex flex-col items-center px-6 border rounded-lg shadow justify-top"
         >
           <img class="h-32" :src="blurb.image" />
           <p class="mt-2 text-justify">{{ blurb.text }}.</p>
@@ -43,7 +43,7 @@
         <div
           v-for="(post, index) in posts"
           :key="index"
-          class="px-6 no-underline bg-gray-200 rounded-lg shadow-lg"
+          class="px-6 border rounded-lg shadow"
         >
           <h3>
             <nuxt-link :to="`/blog/${post.slug}`">{{ post.title }}</nuxt-link>
