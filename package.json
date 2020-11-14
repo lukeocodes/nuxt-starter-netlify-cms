@@ -1,6 +1,6 @@
 {
   "name": "nuxt-starter-netlify-cms",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Example Nuxt, and Netlify CMS project",
   "author": "Luke Oliff <luke@lukeoliff.com> (https://twitter.com/lukeocodes)",
   "private": true,
