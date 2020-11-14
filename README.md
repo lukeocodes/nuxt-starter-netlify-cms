@@ -1,6 +1,6 @@
 # Nuxt Content + Netlify CMS Starter Blog
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/399d41c8-ad29-488a-95e4-5ae5dc195a65/deploy-status)](https://app.netlify.com/sites/nuxt-starter-netlify-cms/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/90509489-1678-40fa-aac3-ac1ce864a5d6/deploy-status)](https://app.netlify.com/sites/nuxt-starter-netlify-cms/deploys)
 
 **Note:** This starter uses [Nuxt 2.14](https://nuxtjs.org/blog/nuxt-static-improvements/) and [@nuxt/content v1.1.0](https://content.nuxtjs.org/). This is a port of the [Gatsby + Netlify CMS Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms).
 
