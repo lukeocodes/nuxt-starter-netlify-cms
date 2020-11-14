@@ -30,15 +30,6 @@
                     Products
                   </nuxt-link>
                 </li>
-                <li>
-                  <a
-                    href="/admin"
-                    target="_blank"
-                    class="text-base leading-6 text-gray-300 hover:text-white"
-                  >
-                    Admin
-                  </a>
-                </li>
               </ul>
             </div>
             <div class="mt-12 md:mt-0">
