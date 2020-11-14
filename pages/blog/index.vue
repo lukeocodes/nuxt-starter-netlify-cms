@@ -1,39 +1,44 @@
 <template>
-  <div>
-    <Hero heading="Latest Stories" image="/assets/images/blog-index.jpg" />
-    <div
-      class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md"
+  <main
+    v-if="blogPosts"
+    class="main"
+  >
+    <h1 class="title text-left">Blog</h1>
+    <ul
+      v-for="(blogPost, index) in blogPosts"
+      :key="index"
+      class="articles"
     >
-      <h1>Latest Stories</h1>
-      <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-        <div
-          v-for="(post, index) in posts"
-          :key="index"
-          class="px-6 no-underline bg-gray-200 rounded-lg shadow-lg"
-        >
-          <h3>
-            <nuxt-link :to="`/blog/${post.slug}`">{{ post.title }}</nuxt-link>
-          </h3>
-          <p>
-            {{ post.description }}
-          </p>
-          <p>
-            <nuxt-link :to="`/blog/${post.slug}`">Read more</nuxt-link>
-          </p>
+      <nuxt-link
+        :to="`blog/${blogPost.slug}`"
+        class="article article--clickable"
+      >
+        <div class="flex justify-between align-baseline">
+          <h3 class="article-title">{{ blogPost.title }}</h3>
+          <h6
+            v-if="blogPost.date"
+            class="inline-block py-1 px-2 bg-accent text-white font-medium rounded-sm dark:bg-accent whitespace-no-wrap"
+          >{{ formatDate(blogPost.date) }}</h6>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="mt-4 mb-2">
+          <p class="inline">{{ blogPost.description }}</p>
+        </div>
+      </nuxt-link>
+    </ul>
+  </main>
 </template>
-
 <script>
 export default {
-  async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
-
-    return {
-      posts,
+  computed: {
+    blogPosts() {
+      return this.$store.state.blogPosts
     }
   },
+  methods: {
+    formatDate(dateString) {
+      const date = new Date(dateString)
+      return date.toLocaleDateString(process.env.lang) || ''
+    }
+  }
 }
 </script>

@@ -1,24 +1,19 @@
 <template>
-  <div>
+  <div class="container">
     <Header />
-    <Nuxt />
-    <Footer />
+    <ColorModePicker />
+    <nuxt />
   </div>
 </template>
 
 <script>
+import Header from '~/components/general/Header.vue'
+import ColorModePicker from '~/components/general/ColorModePicker.vue'
+
 export default {
-  head() {
-    return {
-      script: [
-        {
-          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
-          defer: true,
-        },
-      ],
-    }
-  },
+  components: {
+    Header,
+    ColorModePicker
+  }
 }
 </script>
-
-<style scoped></style>
