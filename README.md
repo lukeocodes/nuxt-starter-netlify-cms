@@ -16,6 +16,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Tags: Separate page for posts under each tag
 - Basic directory organization
 - Uses TailwindCSS for styling from the [`@nuxtjs/tailwindcss`](https://github.com/nuxt-community/tailwindcss-module) module, with PurgeCSS included for minimal CSS.
+- [`@tailwind/typography`](https://tailwindcss.com/docs/typography-plugin) configured for prose and responsive prose.
 - Blazing fast loading times thanks to server-side rendering in [full static mode](https://nuxtjs.org/blog/going-full-static/).
 - Separate components for everything
 - Netlify deploy configuration
