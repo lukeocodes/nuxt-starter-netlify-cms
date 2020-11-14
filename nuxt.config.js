@@ -8,7 +8,7 @@ export default {
       process.env.NODE_ENV === 'production'
         ? process.env.URL || 'http://createADotEnvFileAndSetURL'
         : 'http://localhost:3000',
-    lang: SITE_INFO.sitelang || 'en-US'
+    lang: SITE_INFO.sitelang || 'en-US',
   },
 
   head: {
@@ -19,8 +19,11 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: SITE_INFO.sitedescription || process.env.npm_package_description || ''
-      }
+        content:
+          SITE_INFO.sitedescription ||
+          process.env.npm_package_description ||
+          '',
+      },
     ],
   },
 

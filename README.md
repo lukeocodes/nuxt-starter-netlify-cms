@@ -44,7 +44,8 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 ### Access Locally
 
 Pulldown a local copy of the Github repository Netlify created for you, with the name you specified in the previous step
-```
+
+```shell
 $ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
 $ cd [REPO_NAME]
 $ npm install
@@ -55,13 +56,13 @@ This uses the new [Netlify Dev](https://www.netlify.com/products/dev/?utm_source
 
 To test the CMS locally, you'll need to run a production build of the site:
 
-```
+```shell
 $ netlify dev # or ntl dev
 ```
 
 ## Getting Started (Without Netlify)
 
-```
+```shell
 $ git clone https://github.com/lukeocodes/gatsby-starter-netlify-cms/ [SITE_DIRECTORY_NAME]
 $ cd [SITE_DIRECTORY_NAME]
 $ npm install
@@ -83,16 +84,16 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 Windows users might encounter `node-gyp` errors when trying to npm install.
 To resolve, make sure that you have both Python 2.7 and the Visual C++ build environment installed.
 
-```
-npm config set python python2.7
-npm install --global --production windows-build-tools
+```shell
+$ npm config set python python2.7
+$ npm install --global --production windows-build-tools
 ```
 
 [Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
 
 MacOS users might also encounter some errors, for more info check [node-gyp](https://github.com/nodejs/node-gyp). We recommend using the latest stable node version.
 
-# Contributing
+## Contributing
 
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).
