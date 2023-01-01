@@ -11,7 +11,7 @@
       >
         <div>
           <nuxt-link to="/" class="flex">
-            <img class="h-5" src="/img/logo.svg" alt="Workflow" />
+            <img class="h-5" src="/img/" alt="Workflow" />
           </nuxt-link>
         </div>
         <div class="-my-2 -mr-2 md:hidden">
@@ -23,7 +23,7 @@
             <!-- Heroicon name: menu -->
             <svg
               class="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="/"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
